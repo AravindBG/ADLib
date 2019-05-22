@@ -17,6 +17,7 @@
 		F212C0A2229286E50028AA98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F212C0A0229286E50028AA98 /* LaunchScreen.storyboard */; };
 		F212C0AD229286E50028AA98 /* AravindDemoLibExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F212C0AC229286E50028AA98 /* AravindDemoLibExampleTests.swift */; };
 		F212C0B8229286E50028AA98 /* AravindDemoLibExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F212C0B7229286E50028AA98 /* AravindDemoLibExampleUITests.swift */; };
+		F212C0C422929E840028AA98 /* AravindDemoLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = F212C0C322929E840028AA98 /* AravindDemoLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		F212C0B3229286E50028AA98 /* AravindDemoLibExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AravindDemoLibExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F212C0B7229286E50028AA98 /* AravindDemoLibExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AravindDemoLibExampleUITests.swift; sourceTree = "<group>"; };
 		F212C0B9229286E50028AA98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F212C0C322929E840028AA98 /* AravindDemoLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AravindDemoLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			children = (
 				F212C07A229283400028AA98 /* AravindDemoLib.h */,
 				F212C07B229283400028AA98 /* Info.plist */,
+				F212C0C322929E840028AA98 /* AravindDemoLib.swift */,
 			);
 			path = AravindDemoLib;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				TargetAttributes = {
 					F212C076229283400028AA98 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					F212C07F229283400028AA98 = {
 						CreatedOnToolsVersion = 10.1;
@@ -378,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F212C0C422929E840028AA98 /* AravindDemoLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +584,7 @@
 		F212C08C229283400028AA98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -597,6 +603,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -605,6 +612,7 @@
 		F212C08D229283400028AA98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -631,6 +639,7 @@
 		F212C08F229283400028AA98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AravindDemoLibTests/Info.plist;
@@ -650,6 +659,7 @@
 		F212C090229283400028AA98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AravindDemoLibTests/Info.plist;
